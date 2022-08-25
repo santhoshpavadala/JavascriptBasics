@@ -7,10 +7,48 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>FristJavascript</h1>
-    <button type="button" onclick="document.getElementById('demoId').innerHTML = Date()">
-        Date&Time
+    <h1>My First JavaScript</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.
     </button>
+    <p id="demo"></p>
+    <!-- **JavaScript Can Change HTML Content** -->
+    <h2>What javascript can do?</h2>
+    <p id="demo1">Javascript can change html content</p>
+    <button type="button" onclick="document.getElementById('demo1').innerHTML = 'Hello Javascript'">Click HTML</button>
+    
+    <!-- **JavaScript Can Change HTML Attribute Values** -->
+    <h2>What Can JavaScript Do?</h2>
+    <p>JavaScript can change HTML attribute values.</p>
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+    <!-- **JavaScript Can Change HTML Styles (CSS)** -->
+    <h2>What can do Javascript?</h2>
+    <p id="demoCss">Javascript can change the style of an Html element.</p>
+    <button type="button" onclick="document.getElementById('demoCss').style.fontSize='35px'">Click Css</button>
+
+    <!-- **JavaScript Can Hide HTML Elements** -->
+    <h2>What can do Javascript ?</h2>
+    <p id="HtmlHide">Javascript can hide the html elements.</p>
+    <button type="button" onclick="document.getElementById('HtmlHide').style.display='none'">Hide Html</button>
+
+    <!-- **JavaScript Can Show HTML Elements** -->
+    <h2>What can javascript can do?</h2>
+    <p>Javascript can show hidden elements</p>
+    <p id="HtmlShow" style="display: none;">Hello Javascript,Hidden content</p>
+    <button type="button" onclick="document.getElementById('HtmlShow').style.display='block'">Html Show</button>
+
+    
+    
+    
+    
+    
+    
+    
+    
     <script src="firstjavascript.js"></script>
 </body>
 </html>
