@@ -38,3 +38,36 @@ Showing hidden HTML elements can also be done by changing the display style:
 JavaScript and Java are completely different languages, both in concept and design.
 JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
 ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+
+**JAVASCRIPT SECOND STAGE**
+JavaScript Where To
+The <script> Tag ,
+In HTML,JavaScript code is inserted between <script> and </script> tags.
+
+****Old JavaScript examples may use a type attribute: <script type="text/javascript">.
+The type attribute is not required. JavaScript is the default scripting language in HTML.****
+
+
+**JavaScript Functions and Events**
+A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+For example, a function can be called when an event occurs, like when the user clicks a button.
+
+**JavaScript in <head> or <body>**
+You can place any number of scripts in an HTML document.
+Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both.
+**JavaScript in <head>**
+In this example, a JavaScript function is placed in the <head> section of an HTML page.
+The function is invoked (called) when a button is clicked:
+
+
+**JavaScript Output**
+JavaScript Display Possibilities
+JavaScript can "display" data in different ways:
+Writing into an HTML element, using innerHTML.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log().
+
+Using innerHTML
+To access an HTML element, JavaScript can use the document.getElementById(id) method.
+The id attribute defines the HTML element. The innerHTML property defines the HTML content:
