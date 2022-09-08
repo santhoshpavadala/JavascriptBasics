@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Using innerHTML</h1>
+    <p>To access an HTML element, JavaScript can use the document.getElementById(id) method.The id attribute defines the HTML element. The innerHTML property defines the HTML content:</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <h2>Using document.write()</h2>
+    <p>For testing purposes, it is convenient to use document.write():</p>
+    <p>Never call document.write after the document has finished loading.
+    It will overwrite the whole document.</p>
+    <script>document.write(5 + 6);</script>
+
+    <h2>Using document.write()</h2>
+    <p>For testing purposes, it is convenient to use document.write():</p>
+    <button type="button" onclick="document.write(5 + 6)">Doc.Write</button>
+
+    <h1>Using window.alert()</h1>
+    <p>You can use an alert box to display data:</p>
+    <script>
+    window.alert(5 + 10);
+    </script>
+
+    <script>
+        console.log(5 + 20);
+    </script>
+
+    <h2>JavaScript Print</h2>
+    <p>avaScript does not have any print object or print methods.
+    You cannot access output devices from JavaScript.
+    The only exception is that you can call the window.print() method in the browser to print the content of the current window.
+    </p>
+    <button onclick="window.print()">Print this page</button>
+    
+    <script src="./jsoutput.js"></script>
+</body>
+</html>

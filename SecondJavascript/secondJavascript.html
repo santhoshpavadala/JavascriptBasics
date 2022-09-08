@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="secondjavascript.js"></script>
+    <script>
+        function jsHeader () {
+            document.getElementById('jsHead').innerHTML="Changed html content by using function in script header"
+        }
+    </script>
+</head>
+<body>
+    <h2>Javascript in body</h2>
+    <p id="javaBody"></p>
+    <script>
+        document.getElementById('javaBody').innerHTML= "My Second Javascript";
+    </script>
+
+    <h2>Demo Javascript in Head</h2>
+    <p id="jsHead">Javascrip in header , to change html element</p>
+    <button type="button" onclick="jsHeader()">JsHeader</button>
+</body>
+</html>
