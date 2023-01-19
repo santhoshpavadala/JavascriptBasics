@@ -71,3 +71,57 @@ Writing into the browser console, using console.log().
 Using innerHTML
 To access an HTML element, JavaScript can use the document.getElementById(id) method.
 The id attribute defines the HTML element. The innerHTML property defines the HTML content:
+
+**JavaScript Statements**
+JavaScript statements often start with a keyword to identify the JavaScript action to be performed.
+Our Reserved Words Reference lists all JavaScript keywords.
+Here is a list of some of the keywords you will learn about in this tutorial:
+
+Keyword	Description
+var	   > Declares a variable
+let	   > Declares a block variable
+const	   > Declares a block constant
+if	      > Marks a block of statements to be executed on a condition
+switch   >	Marks a block of statements to be executed in different cases
+for	   > Marks a block of statements to be executed in a loop
+function >	Declares a function
+return	> Exits a function
+try	   > Implements error handling to a block of statements
+
+NOTE:JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.
+
+**6.JavaScript Syntax**
+JavaScript syntax is the set of rules, how JavaScript programs are constructed:
+// How to create variables:
+var x;
+let y;
+// How to use variables:
+x = 5;
+y = 6;
+let z = x + y;
+
+  **JavaScript Values**
+The JavaScript syntax defines two types of values:
+Fixed values
+Variable values
+Fixed values are called Literals.
+Variable values are called Variables.
+JavaScript Literals
+The two most important syntax rules for fixed values are:
+1. Numbers are written with or without decimals:
+10.50
+1001
+2. Strings are text, written within double or single quotes:
+"John Doe"
+'John Doe'
+
+**JavaScript Variables**
+In a programming language, variables are used to store data values.
+JavaScript uses the keywords var, let and const to declare variables.
+An equal sign is used to assign values to variables.
+In this example, x is defined as a variable. Then, x is assigned (given) the value 6:
+let x;
+x = 6;
+
+**JavaScript Operators**
+JavaScript uses arithmetic operators ( + - * / ) to compute values:

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The let keyword was introduced in ES6 (2015). <br>
+        Variables defined with let cannot be Redeclared. <br>
+        Variables defined with let must be Declared before use. <br>
+        Variables defined with let have Block Scope.</p>
+    
+    <h3>Cannot be Redeclared</h3>
+    <p>Variables defined with let cannot be redeclared.
+        You cannot accidentally redeclare a variable.</p>
+    
+    <h3>Block Scope</h3>
+    <p>Before ES6 (2015), JavaScript had only Global Scope and Function Scope. <br>
+        ES6 introduced two important new JavaScript keywords: let and const. <br>
+        These two keywords provide Block Scope in JavaScript. <br>
+        Variables declared inside a { } block cannot be accessed from outside the block:</p>
+    
+    <h3>Redeclaring Variables</h3>
+    <p>Redeclaring a variable using the var keyword can impose problems. <br>
+        Redeclaring a variable inside a block will also redeclare the variable outside the block:</p>
+    <p id="variableRedeclaring"></p>
+
+    <p>Redeclaring a variable using the let keyword can solve this problem. <br>
+        Redeclaring a variable inside a block will not redeclare the variable outside the block: <br></p>
+    <p id="letRedeclaring"></p>
+
+    <p>
+        var x = 2;   // Allowed <br>
+        let x = 3;   // Not allowed <br>
+        <br>
+        { <br>
+        let x = 2;   // Allowed <br>
+        let x = 3;   // Not allowed <br>
+        }
+        <br>
+        { <br>
+        let x = 2;   // Allowed <br>
+        var x = 3;   // Not allowed <br>
+        }
+    </p>
+
+    <h4>JavaScript let</h4>
+    <p>Redeclaring a variable with <b>let</b>, in another scope, or in another block, is allowed:</p>
+    <p id="blockscopeLet"></p>
+
+
+    <script>
+        var x = 10;
+        {
+            var x = 20;
+        }
+        document.getElementById("variableRedeclaring").innerHTML = x;
+
+        let y = 30;
+        {
+            let y = 40;
+        }
+        document.getElementById("letRedeclaring").innerHTML = y;
+        
+        // 
+        let z = 50;
+        {
+            let z = 60;
+        }
+        {
+            let z = 70;
+        }
+        document.getElementById("blockscopeLet").innerHTML = z;
+    </script>
+</body>
+</html>
+
+
+
