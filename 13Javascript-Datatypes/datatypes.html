@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Data Types</title>
+    <link rel="stylesheet" href="datatypes.css">
+</head>
+<body>
+<div class="container">
+    <h1>Javascript - Data Types</h1>
+    <h2>Javascript has 8 Datatypes</h2>
+    <ol>
+        <li>String</li>
+        <li>Number</li>
+        <li>BigInt</li>
+        <li>Boolean</li>
+        <li>Undefined</li>
+        <li>Null</li>
+        <li>Symbol</li>
+        <li>Object</li>
+    </ol>
+    <h1>The Object Data Type</h1>
+    <h2>The object data type can contain:</h2>
+    <ol>
+        <li>An Object</li>
+        <li>An Array</li>
+        <li>A Date</li>
+    </ol>
+</div>
+<div class="container">
+    <h2>Examples</h2>
+    <p>// Numbers: <br>
+        let length = 16; <br>
+        let weight = 7.5; <br>
+        <br>
+        // Strings: <br>
+        let color = "Yellow"; <br>
+        let lastName = "Johnson"; <br>
+        <br>
+        // Booleans <br>
+        let x = true; <br>
+        let y = false; <br>
+        <br>
+        // Object: <br>
+        const person = {firstName:"John", lastName:"Doe"}; <br>
+        <br>
+        // Array object: <br>
+        const cars = ["Saab", "Volvo", "BMW"]; <br>
+        <br>
+        // Date object: <br>
+        const date = new Date("2022-03-25"); <br>
+        </p>
+</div>
+<div class="container">
+    <h1>The Concept of Data Types</h1>
+    <p>In programming, data types is an important concept. <br>
+        To be able to operate on variables, it is important to know something about the type. <br>
+        Without data types, a computer cannot safely solve this:</p> <br>
+    <strong>Note: When adding a number and a string, JavaScript will treat the number as a string.</strong>
+    <div><strong>Example1: let x = 16 + 'Volvo';</strong></div>
+    <div><strong>Example2: let x = 'Volvo' + 16;</strong></div>
+    <p id="datatypeString"></p>
+    <p id="datatypeString2"></p>
+    <br>
+    <strong>Note: JavaScript evaluates expressions from left to right. Different sequences can produce different results:</strong>
+    <div><strong>Example1: let z = 16 + 4 + 'Garuda';</strong></div>
+    <div><strong>Example2: let z = 'Garuda' + 16 + 4;</strong></div>
+    <p id="datatypeString3"></p>
+    <p id="datatypeString4"></p>
+</div>
+<div class="container">
+    <h1>JavaScript Types are Dynamic</h1>
+    <p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types: <br> It will stores the the data and gives latest stored value of it </p>
+    <p id="datatypeDynamic"></p>
+    <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string: like "Santhosh 'Pavadala' x"</p>
+</div>
+
+<div class="container">
+    <h1>JavaScript Strings</h1>
+    <p>Strings are written with quotes. You can use single or double quotes:</p>
+    <p id="datatypeStringeg"></p>
+</div>
+
+<div class="container">
+    <h1>Javascript Number</h1>
+    <p>All Javascript numbers are stored as a decimal numbers (floating point). <br> Numbers can be written with or without decimals</p>
+    <p id="datatypeNumber"></p>
+</div>
+
+<div class="container">
+    <p>Extra large or extra small numbers can be written with scientific (exponential) notation: <br>
+    (Since e means 10 eg: 123e5 means 123*10to the power of 5 & 123e-5 means 123*10 to the power of -5</p>
+    <p id="exponentialNumber"></p>
+</div>
+
+<div class="container">
+    <strong>Note: <br> Most programming languages have many number types: <br>
+
+        Whole numbers (integers): <br>
+        byte (8-bit), short (16-bit), int (32-bit), long (64-bit) <br>
+        
+        Real numbers (floating-piont): <br>
+        float (32-bit), double (64-bit). <br>
+        
+        Javascript are always one type: <br>
+        double (64-bit floating point).</strong>
+</div>
+
+<div class="container">
+    <h1>JavaScript Bigint</h1>
+    <p>All JavaScript numbers are stored in a a 64-bit floating-point format. <br>
+        JavaScript BigInt is a new datatype (2020) that can be used to store integer values that are too big to be represented by a normal JavaScript Number.</p>
+    <p>A BigInt can not have decimals.</p>
+    <p id="datatypeBigInt"></p>
+</div>
+
+<div class="container">
+    <h1>JavaScript Booleans</h1>
+    <p>Booleans can only have two values: <b>true or false</b>.</p>
+    <p>Booleans are often used in conditional testing.</p>
+    <p id="datatypeBoolean"></p>
+</div>
+
+<div class="container">
+    <h1>Javascript Arrays</h1>
+    <p>JavaScript arrays are written with square brackets. <br>
+        Array items are separated by commas. <br>
+        The following code declares (creates) an array called cars, containing three items (car names):</p>
+    <p id="datatypeArray"></p>
+    <p id="datatypeArray0"></p>
+    <p id="datatypeArray1"></p>
+    <p id="datatypeArray2"></p>
+    <strong>Array indexes are zero-based, which means the first item is [0], second is [1], and so on.</strong>
+</div>
+
+<div class="container">
+    <h1>Javascript Objects</h1>
+    <p>JavaScript objects are written with curly braces {}. like const person {} <br>
+        Object properties are written as name:value pairs, separated by commas.</p>
+        <p id="datatypeObject"></p>
+        <p>The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor.</p>
+</div>
+
+<div class="container">
+    <h1>The typeof Operator</h1>
+    <p>You can use the JavaScript typeof operator to find the type of a JavaScript variable. <br>
+        The typeof operator returns the type of a variable or an expression:</p>
+        <p id="datatypeTypeof"></p>
+</div>
+
+<div class="container">
+    <h1>Undefined</h1>
+    <p>In JavaScript, a variable without a value, has the value undefined. The type is also undefined.</p>
+    <p id="datatypeUndefined"></p>
+    <p>Any variable can be emptied, by setting the value to undefined. The type will also be undefined.</p>
+    <p id="datatypeUndefined1"></p>
+</div>
+
+<div class="container">
+    <h1>Empty Values</h1>
+<p>An empty value has nothing to do with undefined. <br>
+    An empty string has both a legal value and a type.
+    </p>
+    <p id="datatypeEmpty"></p>
+</div>
+    <script src="datatypes.js"></script>
+</body>
+</html>
